@@ -1,0 +1,1015 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <style>
+            .btn-default.hover-up:hover {
+                background-color: #000; 
+                color: #fff; 
+            }
+
+            .navbar {
+                font-family: 'Chivo', sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .header-top {
+                font-family: 'Noto Sans', sans-serif;
+            }
+
+            h1.text-display-3 {
+                font-family: 'Archivo Black', sans-serif;
+                font-size: 64px;
+                font-weight: bold;
+            }
+
+            span.tag-1 {
+                font-family: 'Chivo Black', sans-serif;
+            }
+
+            p.p-1 {
+                font-family: 'Noto Sans', sans-serif;
+                font-size: 24px;
+            }
+
+            a.button-penc {
+            font-family: 'Chivo Black', sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="header-top p-0 bg-danger text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 d-none d-md-block" style="padding-top: 2px">
+                    <a class="text-white text-decoration-none line-right" href="tel:(0541) 2090020" dir="ltr">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="me-1" style="width: 17px">
+                            <path fill="currentColor" d="M16.57 22a2 2 0 0 0 1.43-.59l2.71-2.71a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0l-1.6 1.59a7.55 7.55 0 0 1-3-1.59a7.62 7.62 0 0 1-1.59-3l1.59-1.6a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0L2.59 6A2 2 0 0 0 2 7.43A15.28 15.28 0 0 0 6.3 17.7A15.28 15.28 0 0 0 16.57 22zM6 5.41L8.59 8L7.3 9.29a1 1 0 0 0-.3.91a10.12 10.12 0 0 0 2.3 4.5a10.08 10.08 0 0 0 4.5 2.3a1 1 0 0 0 .91-.27L16 15.41L18.59 18l-2 2a13.28 13.28 0 0 1-8.87-3.71A13.28 13.28 0 0 1 4 7.41zM20 11h2a8.81 8.81 0 0 0-9-9v2a6.77 6.77 0 0 1 7 7z"></path>
+                        </svg>
+                        <span class="text-white">(0541) 2090020</span>
+                    </a>
+                    |
+                    <a class="text-white text-decoration-none" href="mailto:jdihkukar1@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="me-1" style="width: 17px">
+                            <path fill="currentColor" d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"></path>
+                            <path fill="currentColor" d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path>
+                        </svg>
+                        <span class="text-white">jdihkukar1@gmail.com</span>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-6 text-end d-flex justify-content-end align-center-end">
+                    <div class="language-switcher-container">
+                        <div class="language_bar_list ">
+                            
+                                <a href="https://jdih.kukarkab.go.id/" style="text-decoration: none;">
+                                    <img src="img/indonesia_flag.png" width="16" alt="Bahasa Indonesia">
+                                    <span class="text-white">Bahasa Indonesia</span>
+                                </a>
+                            
+                        </div>
+                    </div>
+                    <div class="user-profile">
+                        <a href="https://jdih.kukarkab.go.id/panel" class="text-white ms-3 d-inline-block text-decoration-none">
+                            <i class="bi bi-box-arrow-in-right"></i>
+                            <span class="text-white">E-Panel</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container">
+                  <a class="navbar-brand" href="https://jdih.kukarkab.go.id/" data-pjax="">
+                    <img src="img/logo_jdihkukar.png" alt="Logo" class="img-fluid">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://jdih.kukarkab.go.id/" data-pjax="">Beranda</a>
+                      </li>
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:;" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+                                <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/selayang-pandang" data-pjax="">Selayang Pandang</a></li>
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/dasar-hukum" data-pjax="">Dasar Hukum</a></li>
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/visi-dan-misi" data-pjax="">Visi dan Misi</a></li>
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/program-kegiatan" data-pjax="">Program & Kegiatan</a></li>
+                                </ul>
+                            </li>                        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:;" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Publikasi</a>
+                                <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/selayang-pandang" data-pjax="">Agenda</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="javascript:;" id="artikelDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Artikel</a>
+                                        <ul class="dropdown-menu" aria-labelledby="artikelDropdown">
+                                            <li class="dropdown-submenu">
+                                                <ul class="dropdown-menu" aria-labelledby="submenu1">
+                                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/artikel/artikel-hukum" data-pjax="">Artikel Hukum</a></li>
+                                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/artikel/artikel-ilmiah" data-pjax="">Artikel Ilmiah</a></li>
+                                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/artikel/kliping-koran" data-pjax="">Kliping Koran</a></li>
+                                                </ul>
+                                            </li>    
+                                        </ul>
+                                    </li>
+                                    
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/visi-dan-misi" data-pjax="">Berita</a></li>
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/program-kegiatan" data-pjax="">Media</a></li>
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/program-kegiatan" data-pjax="">Penghargaan</a></li>
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/program-kegiatan" data-pjax="">Pengumuman</a></li>
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/program-kegiatan" data-pjax="">SOP (Prosedur Layanan)</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:;" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Koleksi PUU</a>
+                                <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/selayang-pandang" data-pjax="">Produk Hukum</a></li>
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/dasar-hukum" data-pjax="">Rancangan Produk Hukum</a></li>
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/visi-dan-misi" data-pjax="">Naskah Akademik</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:;" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Koleksi Non PUU</a>
+                                <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/selayang-pandang" data-pjax="">Koleksi Buku</a></li>
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/selayang-pandang" data-pjax="">Warta</a></li>
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/selayang-pandang" data-pjax="">Perkara Yang Ditangani</a></li>
+                                    <li><a class="dropdown-item" href="https://jdih.kukarkab.go.id/selayang-pandang" data-pjax="">Putusan Pengadilan</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-default hover-up icon-arrow-right text-nowrap d-none d-md-block d-lg-block bg-light text-dark" href="#" data-pjax="">Konsultasi <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </nav>
+        </header>
+    </div>
+    
+
+
+    <br><br>
+    <div class="container">
+        <main id="content" role="main">
+            <div id="pjax-container">
+                <div id="app">
+                            
+                    <main class="main">
+                        <div id="main-content">
+                            <div class="ck-content">
+                                <section class="section-box">
+                                    <div class="banner-hero banner-homepage8">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-6 mt-20 pb-120">
+                                                    <span class="tag-1 bg-green-900 font-secondary fw-semibold rounded-1 pt-2 pb-2 px-3 bg-danger text-white">
+                                                    Bagian Hukum Setkab Kukar
+                                                    </span>
+                                                    <br><br>
+                                                    <h1 class="text-display-3 mt-20">
+                                                    Selamat Datang di
+                                                    <span class="text-danger">
+                                                        Jaringan Dokumentasi dan Informasi Hukum
+                                                    </span>
+                                                    </h1>
+                                                    <br>
+                                                    <p class="p-1 text-body-lead-large color-gray-500 mt-30 pr-40 text-dark text-opacity-50" style="letter-spacing:-.2px">
+                                                    Tugas kami adalah menyediakan informasi <br> hukum di <strong class="text-black" style="font-family: 'Archivo Black'; font-weight: bolder;">Pemerintah Daerah Kutai <br> Kartanegara</strong> untuk Anda.
+                                                    </p>
+                                                    <div class="mt-4">
+                                                        <a href="#" class="button-penc btn btn-dark btn-lg shape-square" role="button">
+                                                          Pencarian Hukum <i class="bi bi-arrow-right"></i>
+                                                        </a>
+                                                        <a href="#" class="btn btn-link btn-lg text-secondary" role="button" style="font-size: 25px; text-decoration: none;">
+                                                          Konsultasi Hukum
+                                                        </a>
+                                                    </div>                                                  
+                                                </div>
+                                                    <div class="col-lg-6 d-none d-lg-block">
+                                                        <div class="banner d-flex w-100 h-100">
+                                                        <div class="rounded shape-1 d-flex justify-content-center align-items-center hovering-space" style="margin-right: 20px;">
+                                                            <img src="img/banner1.png" alt="" class="img-fluid rounded-circle-custom hovering-space">
+                                                        </div>
+                                                        <div class="rounded mt-20 shape-1-2 d-flex justify-content-center align-items-center" style="margin-right: 20px;">
+                                                            <img src="img/banner2.png" alt="" class="img-fluid rounded-circle-custom">
+                                                        </div>
+                                                        <div class="rounded shape-1 d-flex justify-content-center align-items-center">
+                                                            <img src="img/banner3.png" alt="" class="img-fluid rounded-circle-custom hovering-space">
+                                                        </div>
+                                                    </div>
+                                                </div>                                          
+                                            </div>
+                                
+                                <br><br><br><br><br>
+                                
+                                    <div class="row align-items-start">
+                                      <div class="col-md-8 mt-4">
+                                        <div style="margin-top:-100px;">
+                                            <style type="text/css">
+                                                .sekilas-info{
+                                                    clear:both;
+                                                }
+                                                .news-ticker{
+                                                    border-radius:2px;
+                                                    position:relative;
+                                                    height:36px;
+                                                    width:100%;
+                                                    box-shadow:0 1px 4px rgba(0,0,0,0.3);
+                                                    background:#fff;
+                                                    overflow:hidden;
+                                                    margin-bottom:20px;
+                                                }
+                                                .news-ticker:before,.news-ticker:after{
+                                                    content:" ";
+                                                    display:table;
+                                                }
+                                                .news-ticker:after{
+                                                    clear:both;
+                                                }
+                                                .news-ticker .news-ticker-body, .news-ticker .news-ticker-heading, .news-ticker .triangle-up-left{
+                                                    float:left;
+                                                }
+                                                .news-ticker .news-ticker-heading{
+                                                    background:#cb1119;
+                                                    height:100%;
+                                                    font-weight:600;
+                                                    font-size:18px;
+                                                    padding:5px 15px 5px 10px;
+                                                    color:#fff;
+                                                }
+                                                .news-ticker .news-ticker-heading span{
+                                                    font-size:15px;
+                                                }
+                                                .fa-fw{
+                                                    width:1.28571429em;
+                                                    text-align:center;
+                                                }
+                                                .news-ticker .triangle-up-left{
+                                                    width:0;
+                                                    height:0;
+                                                    padding-bottom:5%;
+                                                    padding-left:5%;
+                                                    overflow:hidden;
+                                                }
+                                                .news-ticker .triangle-up-left:after{
+                                                    content:"";
+                                                    display:block;
+                                                    width:0;
+                                                    height:0;
+                                                    margin-left:0px;
+                                                    border-bottom:500px solid transparent;
+                                                    border-left:500px solid #01923f;
+                                                }
+                                                .news-ticker .news-ticker-body{
+                                                    font-size:16px;
+                                                    position:absolute;
+                                                    padding:7px 10px 10px 153px;
+                                                    width:100%;
+                                                }
+
+                                                .news-ticker-heading {
+                                                    font-family: 'Chivo Black', sans-serif;
+                                                    font-weight: bold;
+                                                }
+                                            </style>
+                                          <div class="sekilas-info">
+                                            <div class="news-ticker">
+                                              <div class="news-ticker-heading bg-danger text-light">
+                                                <span class="sembunyi">
+                                                  <i class="fa fa-bullhorn fa-fw"></i> SEKILAS INFO
+                                                </span>
+                                              </div>
+                                              <div class="triangle-up-left"></div>
+                                              <div class="news-ticker-body">
+                                                <marquee scrolldelay="150">
+                                                  <span> Selamat datang di Bagian Hukum Sekretariat Daerah Kabupaten Kutai Kartanegara, </span>
+                                                  <span> Selamat Hari Ulang Tahun Kota Tenggarong ke 241, </span>
+                                                  <span> Website resmi Bagian Hukum Setda Kukar sudah mulai beroperasi kembali setelah dilakukan perbaikan, </span>
+                                                </marquee>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <style>
+                                            /* Menghilangkan garis link bawahnya pada card di sebelah kiri */
+                                            .left-cards .card a {
+                                            text-decoration: none;
+                                            }
+
+                                            /* Efek hover pada card di sebelah kiri */
+                                            .left-cards .card:hover {
+                                                background-color: var(red);
+                                            }
+
+                                            .left-cards .card:hover .text-dark {
+                                            color: white;
+                                            }
+
+                                            .text-perpub {
+                                                font-family: 'Chivo', sans-serif;
+                                            }
+
+                                            .text-perpub-2 {
+                                                font-family: 'Archivo Black', sans-serif;   
+                                            }
+
+                                            .card-text-perpub {
+                                                font-family: 'Chivo', sans-serif;
+                                                font-weight: bold;
+                                            }
+
+                                            .peraturan {
+                                                font-family: 'Chivo Black', sans-serif;
+                                                font-weight: bold;
+                                            }
+
+                                            .btn-selengkapnya {
+                                                font-family: 'Chivo', sans-serif;
+                                                font-weight: bold;
+                                                font-size: 18px;
+                                            }
+                                            
+                                          </style>
+
+                                          <h4 class="peraturan mb-3 mt-5 peraturan-background">Peraturan Terbaru</h4>
+                                          <div class="row gx-3">
+                                            <div class="col-6 col-md-4 left-cards">
+                                              <div class="card bg-light mb-3">
+                                                <a href="https://jdih.kukarkab.go.id/produk-hukum/peraturan/teknis-pemberian-tunjangan-hari-raya-dan-gaji-ketiga-belas-yang-bersumber-dari-anggaran-pendapatan-dan-belanja-daerah-tahun-2023" data-pjax="">
+                                                  <div class="card-body">
+                                                    <span class=" text-perpub text-body-small d-block mb-2 text-danger">
+                                                      <strong>PERBUP</strong> - Peraturan Bupati
+                                                    </span>
+                                                    <h5 class="text-perpub-2 card-title text-dark">11/PERBUP/2023</h5>
+                                                    <p class="card-text-perpub card-text text-body-text text-muted mt-2 mb-2 line-clamp-3" style="line-height: 19px;font-size: 14px;">
+                                                      Teknis Pemberian Tunjangan Hari Raya Dan Gaji Ketiga Belas Yang Bersumber Dari Anggaran Pendapatan Dan Belanja Daerah Tahun 2023
+                                                    </p>
+                                                  </div>
+                                                </a>
+                                              </div>
+                                            </div>
+                                            <div class="col-6 col-md-4 left-cards">
+                                              <div class="card bg-light mb-3">
+                                                <a href="https://jdih.kukarkab.go.id/produk-hukum/peraturan/gugus-tugas-pendampingan-desa-kukar-idaman" data-pjax="">
+                                                  <div class="card-body">
+                                                    <span class="text-perpub text-body-small d-block mb-2 text-danger">
+                                                      <strong>PERBUP</strong> - Peraturan Bupati
+                                                    </span>
+                                                    <h5 class="text-perpub-2 card-title text-dark">6/PERBUP/2023</h5>
+                                                    <p class="card-text-perpub card-text text-body-text text-muted mt-2 mb-2 line-clamp-3" style="line-height: 19px;font-size: 14px;">
+                                                      Gugus Tugas Pendampingan Desa 'kukar Idaman'
+                                                    </p>
+                                                  </div>
+                                                </a>
+                                              </div>
+                                            </div>
+                                            <div class="col-6 col-md-4 left-cards">
+                                              <div class="card bg-light mb-3">
+                                                <a href="https://jdih.kukarkab.go.id/produk-hukum/peraturan/tata-cara-pengalokasian-bagian-dari-hasil-pajak-dan-retribusi-daerah-kepada-desa-tahun-anggaran-2023" data-pjax="">
+                                                  <div class="card-body">
+                                                    <span class="text-perpub text-body-small d-block mb-2 text-danger" >
+                                                      <strong>PERBUP</strong> - Peraturan Bupati
+                                                    </span>
+                                                    <h5 class="text-perpub-2 card-title text-dark">5/PERBUP/2023</h5>
+                                                    <p class="card-text-perpub card-text text-body-text text-muted mt-2 mb-2 line-clamp-3" style="line-height: 19px;font-size: 14px;">
+                                                      Tata Cara Pengalokasian Bagian Dari Hasil Pajak Dan Retribusi Daerah Kepada Desa Tahun Anggaran 2023
+                                                    </p>
+                                                  </div>
+                                                </a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <a href="https://jdih.kukarkab.go.id/produk-hukum" class="btn-selengkapnya btn btn-sm btn-warning rounded-2 py-2">
+                                            Selengkapnya
+                                          </a>
+                                          <p class="mt-3 text-dark">
+                                            *Diperbarui terakhir kali pada Rabu, 11 Oktober 2023 00:38:06 WITA
+                                          </p>
+                                        </div>
+                                        <br><br>
+                                      </div>
+                                      <br><br><br><br><br>
+                                      <div class="col-md-4">
+                                        <br><br>
+                                        <div class="card p-3 hover-up rounded-2 bg-danger" style="background-color:var(--color-primary);margin-top: -100px;">
+                                          <div class="card-body bg-danger">
+                                            <h5 class="card-title mt-3 text-light" style="font-family: 'Chivo', sans-serif; font-weight: bold;">Indeks Kepuasan Masyarakat</h5>
+                                            <div class="mt-3 text-light">
+                                              <p class="font-secondary mb-2" style="font-family: 'Chivo', sans-serif; ">Pengunjung yang terhormat,</p>
+                                              <p class="font-secondary mb-2" style=" font-family: 'Chivo', sans-serif; ">Dalam rangka meningkatkan kualitas informasi website JDIH Pemerintah Kabupaten Kutai Kartanegara, kami melakukan survey tingkat kepuasan kualitas & layanan website ini.</p>
+                                              <p class="font-secondary mb-2">Mohon tekan tombol di bawah ini untuk ikut berkontribusi terhadap kualitas & kemajuan website JDIH Pemerintah Kabupaten Kutai Kertanegara.</p>
+                                              <p class="font-secondary mb-2" style="font-family: 'Chivo', sans-serif; ">Terima Kasih.</p>
+                                            </div>
+                                            <a href="javascript:;" class="btn btn-sm btn-dark mt-3 rounded-2 py-2" data-bs-toggle="modal" data-bs-target="#modal-survey" style="font-size: 18px; font-family: 'Chivo', sans-serif;">
+                                              Mulai
+                                            </a>
+                                            <a href="javascript:;" class="btn btn-sm rounded-2 py-2 pt-3 text-light text-sm" data-bs-toggle="modal" data-bs-target="#hasil-survey" style="font-size: 18px; font-family: 'Chivo', sans-serif;">
+                                              Hasil Survey
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                  
+                                <br><br><br>
+                                <style>
+                                    .text-statistik {
+                                        font-family: 'Archivo Black', sans-serif;
+                                        font-size: 42px;
+                                    }
+
+                                    .btn-grafik{
+                                        font-size: 25px;
+                                        font-family: 'Chivo Black', sans-serif;
+                                        font-weight: bold;
+
+                                    }
+                                </style>
+
+                                <section class="section mt-5">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <h3 class="text-statistik text-dark">
+                                                    Statistik produk hukum<br>
+                                                    yang kami miliki<br>
+                                                    untuk Anda
+                                                </h3>
+                                                <br>
+                                                <div class="mt-3">
+                                                    <a href="#" class="btn-grafik btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-grafik" >
+                                                        Grafik Dokumen Hukum <i class="bi bi-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="mt-4">
+                                                    <p class="text-muted">
+                                                        Update Terakhir: <strong>Rabu, 11 Oktober 2023 00:38:06 WITA</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-4">
+                                                        <h3 class="text-dark" style="font-family: 'Archivo Black', sans-serif; font-size: 42px;">
+                                                            <span class="count">281</span>
+                                                        </h3>
+                                                        <span class="text-dark" style="font-size: 20px; font-family: 'Chivo Black', sans-serif; font-weight: bolder;">Peraturan Daerah</span>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <h3 class="text-dark" style="font-family: 'Archivo Black', sans-serif; font-size: 42px;">
+                                                            <span class="count">994</span>
+                                                        </h3>
+                                                        <span class="text-dark" style="font-size: 20px; font-family: 'Chivo Black', sans-serif; font-weight: bolder;">Peraturan Bupati</span>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <h3 class="text-dark" style="font-family: 'Archivo Black', sans-serif; font-size: 42px;">
+                                                            <span class="count">4</span>
+                                                        </h3>
+                                                        <span class="text-dark" style="font-size: 20px; font-family: 'Chivo Black', sans-serif; font-weight: bolder;">Surat Edaran</span>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4" >
+                                                        <h3 class="text-dark" style="font-family: 'Archivo Black', sans-serif; font-size: 42px;">
+                                                            <span class="count">0</span>
+                                                        </h3>
+                                                        <span class="text-dark" style="font-size: 20px; font-family: 'Chivo Black', sans-serif; font-weight: bolder;">Rancangan Peraturan</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <br><br><br><br>
+                                
+                                <style>
+                                    .kabar-hukum {
+                                        font-family: 'Archivo Black', sans-serif;
+                                        font-size: 64px;
+                                    }
+
+                                    .custom-btn {
+                                        width: 250px; /* Sesuaikan lebar sesuai kebutuhan */
+                                        height: 80px; /* Sesuaikan tinggi sesuai kebutuhan */
+                                        font-size: 23px; /* Sesuaikan ukuran teks sesuai kebutuhan */
+                                        font-weight: bold;
+                                        font-family: 'Chivo';
+
+                                        display: inline-flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+                                </style>
+
+                                <div class="container mt-5">
+                                    <section class="section mt-5">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <h3 class="kabar-hukum text-dark mb-5">Kabar Hukum</h3>
+                                                <p class="text-dark text-opacity-75" style="font-size: 24px; font-family: 'Noto Sans', sans-serif;">
+                                                    Kabar Hukum Terkini di Kutai Kartanegara
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4 text-lg-end text-start pt-5" style="font-family: 'Chivo', sans-serif; font-weight: bold;">
+                                                <a class="btn btn-dark btn-lg rounded-pill custom-btn" href="https://jdih.kukarkab.go.id/berita">
+                                                    Selengkapnya <i class="bi bi-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                    </section>
+
+                                   <style>
+                                    .card-penyuluh:hover {
+                                        opacity: 0.7; /* Nilai opacity bisa disesuaikan */
+                                    }
+
+                                    .card-hukum:hover {
+                                        opacity: 0.7; /* Nilai opacity bisa disesuaikan */
+                                    }
+
+                                   </style>
+
+                                    <section class="mt-5">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-sm-12 mb-4">
+                                                <div class="card border-0 rounded">
+                                                    <img src="img/kunjungan-bagian-hukum-setda-kota-samarinda-ke-bagian-hukum-setkab-kutai-kartanegara-MBgH9_m.png" alt="" class="card-img-top rounded- img-shadow">
+                                                    <a href="https://jdih.kukarkab.go.id/berita/kunjungan-bagian-hukum-setda-kota-samarinda-ke-bagian-hukum-setkab-kutai-kartanegara" data-bs-toggle="modal" data-bs-target="#modal-grafik">
+                                                        
+                                                    </a>
+                                                    <div class="card-body">
+                                                        <p class="text-muted text-uppercase mb-2" style="font-family: 'Noto Sans', sans-serif;">
+                                                            Sub Bagian Penyuluh Hukum
+                                                        </p>
+                                                        <a href="https://jdih.kukarkab.go.id/berita/kunjungan-bagian-hukum-setda-kota-samarinda-ke-bagian-hukum-setkab-kutai-kartanegara" class="card-penyuluh card-title text-dark h5" data-bs-toggle="modal" data-bs-target="#modal-grafik" style="font-family: 'Archivo Black', sans-serif; text-decoration: none;">
+                                                            Kunjungan Bagian Hukum Setda Kota Samarinda ke Bagian Hukum Setkab Kutai Kartanegara
+                                                        </a>
+                                                        <p class="text-muted mb-0">
+                                                            Operator 8 • Sep 14, 2023 19:54 PM
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-12 mb-4">
+                                                <div class="card border-0 rounded">
+                                                    <img src="img/rapat-harmonisasi-perdes-hJS8K_m.png" alt="" class="card-img-top rounded img-shadow">
+                                                    <a href="https://jdih.kukarkab.go.id/berita/rapat-harmonisasi-perdes" data-bs-toggle="modal" data-bs-target="#modal-grafik">
+                                                    </a>
+                                                    <div class="card-body">
+                                                        <p class="text-muted text-uppercase mb-2" style="font-family: 'Noto Sans', sans-serif;">
+                                                            Sub Bagian Penyuluh Hukum
+                                                        </p>
+                                                        <a href="https://jdih.kukarkab.go.id/berita/rapat-harmonisasi-perdes" class="card-penyuluh text-dark h5" data-bs-toggle="modal" data-bs-target="#modal-grafik" style="font-family: 'Archivo Black', sans-serif; text-decoration: none;">
+                                                            Rapat Harmonisasi PERDES
+                                                        </a>
+                                                        <p class="text-muted mb-0">
+                                                            Operator 8 • Sep 13, 2023 16:44 PM
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-12 mb-4">
+                                                <div class="card border-0 rounded">
+                                                    <img src="img/rapat-yang-difasilitasi-oleh-bagian-hukum-Al3ss_m.png" alt="" class="card-img-top rounded img-shadow">
+                                                    <a href="https://jdih.kukarkab.go.id/berita/rapat-yang-difasilitasi-oleh-bagian-hukum" data-bs-toggle="modal" data-bs-target="#modal-grafik">
+                                                    </a>
+                                                    <div class="card-body">
+                                                        <p class="text-muted text-uppercase mb-2" style="font-family: 'Noto Sans', sans-serif;">
+                                                            Bagian Hukum
+                                                        </p>
+                                                        <a href="https://jdih.kukarkab.go.id/berita/rapat-yang-difasilitasi-oleh-bagian-hukum" class="card-hukum card-title text-dark h5" data-bs-toggle="modal" data-bs-target="#modal-grafik" style="font-family: 'Archivo Black', sans-serif; text-decoration: none;">
+                                                            Rapat yang difasilitasi oleh Bagian Hukum
+                                                        </a>
+                                                        <p class="text-muted mb-0">
+                                                            Hj. Sri Rahmawaty • Aug 21, 2023 22:16 PM
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                
+
+                               
+                                
+                                <div>
+                                    <section class="section-box mt-5">
+                                        <div class="container mt-3">
+                                            <div class="row">
+                                                <div class="col-lg-9 col-sm-8">
+                                                    <h3 class="koleksi-buku text-heading-1 mb-4" style="font-family: 'Archivo Black', sans-serif;
+                                                    font-size: 64px;">Koleksi Buku</h3>
+                                                    <p class="text-dark text-opacity-75" style="font-size: 24px; font-family: 'Noto Sans', sans-serif;">
+                                                        Koleksi Buku yang ada di Kantor. Silakan kunjungi jika ada waktu!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container mt-4">
+                                            <div class="row justify-content-between">
+                                                        <div class="col">
+                                                            <div class="card">
+                                                                <img src="img/pembahasan-permasalahan-dan-penerapan-kuhad-penyidikan-dan-penuntutan-cover.png" alt="Buku 1" class="card-img-top">
+                                                                <div class="card-body">
+                                                                    <span class="text-body-small color-gray-500 font-bold text-muted" style="font-family: 'Noto Sans', sans-serif;">
+                                                                        2014
+                                                                    </span>
+                                                                    <h3 class="text-body-lead" style="font-family: 'Chivo', sans-serif; font-weight: bold; font-size: 18px;">Pembahasan Permasalahan Dan Penerapan Kuhad Penyidikan Dan Penuntutan</h3>
+                                                                    <div class="mt-3 text-muted" style="font-family: 'Chivo', sans-serif;">
+                                                                        Penerbit: M. Yahya Harahap, S.H
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="card">
+                                                                <img src="img/pengantar-hukum-indonesia-cover.png" alt="Buku 2" class="card-img-top">
+                                                                <div class="card-body">
+                                                                    <span class="text-body-small color-gray-500 font-bold text-muted" style="font-family: 'Noto Sans', sans-serif;">
+                                                                        2015
+                                                                    </span>
+                                                                    <h3 class="text-body-lead color-gray-900 line-clamp-2" style="font-family: 'Chivo', sans-serif; font-weight: bold; font-size: 18px;">Pengantar Hukum Indonesia</h3>
+                                                                    <div class="mt-3 text-muted" style="font-family: 'Chivo', sans-serif;">
+                                                                        Penerbit: YMIBA
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="card">
+                                                                <img src="img/hak-asasi-manusia-dalam-konstitusi-indonesia-cover.png" alt="Buku 3" class="card-img-top">
+                                                                <div class="card-body">
+                                                                    <span class="text-body-small color-gray-500 font-bold text-muted" style="font-family: 'Noto Sans', sans-serif;">
+                                                                        2016
+                                                                    </span>
+                                                                    <h3 class="text-body-lead color-gray-900 line-clamp-2" style="font-family: 'Chivo', sans-serif; font-weight: bold; font-size: 18px;">Hak Asasi Manusia Dalam Konstitusi Indonesia</h3>
+                                                                    <div class="mt-3 text-muted" style="font-family: 'Chivo', sans-serif;">
+                                                                        Penerbit: Majda El Muhtaj
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="card">
+                                                                <img src="img/hukum-acara-pidana-cover.png" alt="Buku 4" class="card-img-top">
+                                                                <div class="card-body">
+                                                                    <span class="text-body-small color-gray-500 font-bold text-muted" style="font-family: 'Noto Sans', sans-serif;">
+                                                                        2014
+                                                                    </span>
+                                                                    <h3 class="text-body-lead color-gray-900 line-clamp-2" style="font-family: 'Chivo', sans-serif; font-weight: bold; font-size: 18px;">Hukum Acara Pidana</h3>
+                                                                    <div class="mt-3 text-muted" style="font-family: 'Chivo', sans-serif;">
+                                                                        Penerbit: Kencana
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                
+                                <br><br><br>
+                                
+                                
+
+                                <div>
+                                    <section class="section-box mt-5">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                                    <h3 class="text-heading-1 mb-4" style="font-family: 'Archivo Black', sans-serif;
+                                                    font-size: 64px;">Proses SK (5 Terbaru)</h3>
+                                                    <p class="text-dark text-opacity-75" style="font-size: 24px; font-family: 'Noto Sans', sans-serif;">
+                                                        Berikut Proses SK yang sedang dan telah berproses.
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-4 text-lg-end text-start pt-4">
+                                                    <a class="btn btn-dark btn-lg rounded-pill custom-btn" href="https://jdih.kukarkab.go.id/berita">
+                                                        Selengkapnya <i class="bi bi-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container mt-4">
+                                            <div class="table-proses table-borderless table-responsive">
+                                                <table class="table" style="font-size: 1rem">
+                                                    <thead>
+                                                        <tr style="font-family: 'Noto Sans', sans-serif; font-weight: lighter;">
+                                                            <th class="bg-danger text-white">Nomor</th>
+                                                            <th class="bg-danger text-white">OPD</th>
+                                                            <th class="bg-danger text-white">SK Tentang</th>
+                                                            <th class="bg-danger text-white">Status</th>
+                                                            <th class="bg-danger text-white">Keterangan</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="text-gray text-opacity-50" style="font-family: 'Noto Sans', sans-serif;">
+                                                        <tr>
+                                                            <td>155/SK-SEKDA/HK/2023</td>
+                                                            <td>Dinas Pemuda dan Olah Raga</td>
+                                                            <td>Pembentukan Tim Penilai Seleksi Pemuda Pelopor Tahun 2023</td>
+                                                            <td>Terbit</td>
+                                                            <td>sudah bisa diambil pada Bagian Hukum</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>154/SK-SEKDA/HK/2023</td>
+                                                            <td>Badan Perencanaan Pembangunan Daerah</td>
+                                                            <td>Tim Penyusun Rancangan Awal Rencana Pembangunan Jangka Panjang Daerah Tahun 2025-2045</td>
+                                                            <td>Terbit</td>
+                                                            <td>sudah bisa diambil pada Bagian Hukum</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>153/SK-SEKDA/HK/2023</td>
+                                                            <td>Dinas Perindustrian dan Perdagangan</td>
+                                                            <td>Tim Pelaksana Kegiatan Fasilitasi Pemenuhan Komitmen Perolehan Perizinan Pasar Rakyat Melalui Sistem Pelayanan Perizinan Berusaha Terintegrasi Secara Elektronik Tahun Anggaran 2023</td>
+                                                            <td>Terbit</td>
+                                                            <td>sudah bisa diambil pada Bagian Hukum</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>144/SK-SEKDA/HK/2023</td>
+                                                            <td>Dinas Pemberdayaan Masyarakat dan Desa</td>
+                                                            <td>Penetapan Tim Evaluasi dan Pengawasan Peraturan Desa Tahun 2023</td>
+                                                            <td>Terbit</td>
+                                                            <td>sudah bisa diambil pada Bagian Hukum</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>141/SK-SEKDA/HK/2023</td>
+                                                            <td>Bagian Umum</td>
+                                                            <td>Tim Penatausahaan Arsip Dinamis pada Satuan Kerja Perangkat Daerah Sekretariat Daerah Kabupaten Kutai Kartanegara</td>
+                                                            <td>Terbit</td>
+                                                            <td>sudah bisa diambil pada Bagian Hukum</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                
+                                <br><br><br><br><br><br><br>
+    
+                                <div>
+                                    <section class="section-box">
+                                        <div class="container mt-110">
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                                    <h3 class="text-heading-1 mb-10" style="font-family: 'Archivo Black', sans-serif;
+                                                    font-size: 64px;">Uji Publik (5 Terbaru)</h3>
+                                                    <p class="text-dark text-opacity-75" style="font-size: 24px; font-family: 'Noto Sans', sans-serif;">
+                                                        Hasil uji publik yang kami lakukan.
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-4 text-lg-end text-start pt-30">
+                                                    <a class="btn btn-dark btn-lg rounded-pill custom-btn" href="https://jdih.kukarkab.go.id/berita">
+                                                        Selengkapnya <i class="bi bi-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container mt-20">
+                                            <table class="table table-borderless" style="font-size: 1rem;">
+                                                <thead>
+                                                    <tr style="background: #cb1119; color: #fff;">
+                                                        <th width="1" class="bg-danger text-white">No</th>
+                                                        <th class="bg-danger text-white">Judul</th>
+                                                        <th class="bg-danger text-white">Keterangan</th>
+                                                        <th width="1" class="bg-danger text-white">Dokumen</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="text-gray text-opacity-50" style="font-family: 'Noto Sans', sans-serif;">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Uji Publik Perbup tentang Beasiswa Kukar Idaman</td>
+                                                        <td>dalam persiapan</td>
+                                                        <td>
+                                                            <a href="https://jdih.kukarkab.go.id/storage/Peraturan/UjiPublik/2023-08/21/uji-publik-perbup-tentang-beasiswa-kukar-idaman.pdf" target="_blank" style="text-decoration: none;" class="text-danger">
+                                                                Unduh
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                </div>
+                                
+                                <br><br><br><br><br><br><br>
+    
+                                <div>
+                                    <section class="section-box">
+                                        <div class="container mt-110">
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                                    <h3 class="text-heading-1 mb-10" style="font-family: 'Archivo Black', sans-serif;
+                                                    font-size: 64px;">Bantuan Hukum (5 Terbaru)</h3>
+                                                    <p class="text-dark text-opacity-75" style="font-size: 24px; font-family: 'Noto Sans', sans-serif;">
+                                                        Berikut kolom Warta, Perkara &amp; Putusan Pengadilan yang ditangani oleh Bagian Hukum.
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-4 text-lg-end text-start pt-30">
+                                                    <a class="btn btn-dark btn-lg rounded-pill custom-btn" href="https://jdih.kukarkab.go.id/berita">
+                                                        Selengkapnya <i class="bi bi-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container mt-20">
+                                            <table class="table table-borderless" style="font-size: 1rem;">
+                                                <thead>
+                                                    <tr style="background: #cb1119; color: #fff;">
+                                                        <th width="1" class="bg-danger text-white">No</th>
+                                                        <th class="bg-danger text-white">Judul</th>
+                                                        <th class="bg-danger text-white">Nomor Surat</th>
+                                                        <th class="bg-danger text-white">Tanggal Penetapan</th>
+                                                        <th width="1" class="bg-danger text-white">Dokumen</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="text-gray text-opacity-50" style="font-family: 'Noto Sans', sans-serif;">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            Judul 1
+                                                        </td>
+                                                        <td>1234</td>
+                                                        <td>2023-06-07</td>
+                                                        <td>
+                                                            <a href="https://jdih.kukarkab.go.id/storage/Peraturan/Analis/2023-06/23/judul-1.pdf" target="_blank" style="text-decoration: none;" class="text-danger">
+                                                                Unduh
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                </div>
+                                
+                            </div>
+                        </div>
+    </main>
+    
+    <br><br><br>
+    
+    <style>
+        .footer:after {
+            content: "";
+            display: block;
+            border-top: 1px solid #ccc; /* Ganti warna dan styling garis sesuai kebutuhan */
+            margin-top: 10px; /* Sesuaikan jarak pemisah sesuai kebutuhan */
+        }
+    
+        .footer-top:after {
+            content: "";
+            display: block;
+            border-top: 1px solid #ccc; /* Ganti warna dan styling garis sesuai kebutuhan */
+            margin-top: 10px;
+        }
+    
+        .footer-bottom:before {
+            content: "";
+            display: block;
+            border-top: 1px solid #ccc; /* Ganti warna dan styling garis sesuai kebutuhan */
+            margin-bottom: 10px; /* Sesuaikan jarak pemisah sesuai kebutuhan */
+        }
+    </style>
+    
+    
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="section-box overflow-visible mt-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                            <a class="item-logo hover-up" href="http://kukarkab.go.id/">
+                                <img alt="Portal Kutai Kartanegara" src="img/portal-kutai-kartanegara.png" class="img-fluid" style="max-width: 150px; height: auto;">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                            <a class="item-logo hover-up" href="http://www.kemendagri.go.id/produk-hukum">
+                                <img alt="JDIH Kementerian Dalam Negeri" src="img/jdih-kementerian-dalam-negeri.png" class="img-fluid" style="max-width: 150px; height: auto;">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                            <a class="item-logo hover-up" href="https://www.kemenkumham.go.id/">
+                                <img alt="JDIH Kementerian Hukum dan Hak Asasi Manusia" src="img/jdih-kementerian-hukum-dan-hak-asasi-manusia.png" class="img-fluid" style="max-width: 100px; height: auto;">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                            <a class="item-logo hover-up" href="https://jdihn.go.id/">
+                                <img alt="JDIH Nasional" src="img/jdih-nasional.png" class="img-fluid" style="max-width: 150px; height: auto;">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                            <a class="item-logo hover-up" href="http://jdih.kaltimprov.go.id/">
+                                <img alt="JDIH Provinsi Kalimantan Timur" src="img/jdih-provinsi-kalimantan-timur.png" class="img-fluid" style="max-width: 150px; height: auto;">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                            <a class="item-logo hover-up" href="http://jdih.bphn.go.id/">
+                                <img alt="JDIH Badan Pembinaan Hukum Nasional" src="img/jdih-badan-pembinaan-hukum-nasional.png" class="img-fluid" style="max-width: 150px; height: auto;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="footer-top"></div>
+        <br><br>
+        <div class="row">
+            <div class="col-lg-7 mb-3">
+                <div class="d-flex">
+                    <img src="img/favicon.png" alt="" height="135" style="margin-top: -10px">
+                    <div>
+                        <h4 class="text-heading-5" style="font-family: 'Noto Sans', sans-serif; font-weight: bold;font-size: 22px;">Bagian Hukum (Sekretariat Daerah)</h4>
+                        <div class="mt-2 text-body color-gray" style="font-size: 16px; font-family: 'Chivo', sans-serif;">
+                            <i class="bi bi-geo-alt-fill me-1"></i>
+                            Jalan Wolter Monginsidi Kel. Timbau Kec. Tenggarong
+                        </div>
+                        <div class="mt-2 text-body color-gray" style="font-size: 16px; font-family: 'Chivo', sans-serif;">
+                            <i class="bi bi-telephone-fill me-1"></i>
+                            Telp. (0541) 2090020
+                        </div>
+                        <div class="mt-2 text-body color-gray" style="font-size: 16px; font-family: 'Chivo', sans-serif;">
+                            <i class="bi bi-envelope-fill me-1"></i>
+                            Email. <a href="https://jdih.kukarkab.go.id/" style="text-decoration: none;" class="text-danger">jdihkukar1@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <h4 class="text-heading-5" style="font-family: 'Noto Sans', sans-serif; font-weight: bold;font-size: 22px;">Jam Operasional</h4>
+                <div class="open-time mt-2" style="font-size: 16px; font-family: 'Chivo', sans-serif;">
+                    <p>
+                        <strong>Hari Kerja:</strong>
+                        <br>Senin - Kamis: 7.30 s/d 16.00 <br> Jum'at: 7.30 s/d 12.00
+                    </p>
+                    <p>
+                        <strong>Libur:</strong>
+                        <br> Sabtu, Minggu &amp; Libur Nasional
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <h4 class="text-heading-5" style="font-family: 'Noto Sans', sans-serif; font-weight: bold;font-size: 22px;">Stat. Pengunjung</h4>
+                <div class="menu-footer" style="font-size: 16px; font-family: 'Chivo', sans-serif;">
+                    <p>Hari Ini : 7 pengunjung</p>
+                    <p>Minggu Ini : 0 pengunjung</p>
+                    <p>Bulan Ini : 0 pengunjung</p>
+                    <p>Total : 27580 pengunjung</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="footer-bottom mt-2">
+            <br><br>
+            <div class="row">
+                <div class="col-md-7 text-muted" style="font-family: 'Noto Sans', sans-serif; font-size: 18px;">
+                    <span class="color-gray-500 text-body-lead">2023 © Bagian Hukum Kutai Kartanegara.</span>
+                </div>
+                <div class="col-md-5 text-lg-end text-md-end">
+                    
+                            <a href="https://enterwind.com/" target="_blank">
+                                <img src="img/logo-footer.png" height="30" alt="">
+                            </a>
+                        
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  </body>
+</html>
