@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <style>
+        .btn-default.hover-up:hover {
+                background-color: #000; 
+                color: #fff; 
+            }
+
+            .navbar {
+                font-family: 'Chivo', sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+
+            .header-top {
+                font-family: 'Noto Sans', sans-serif;
+            }
+
+        .banner-hero.banner-breadcrums {
+            background-color: #FFF3EA;
+            padding: 48px 0px;
+        }
+        .form-search {
+            line-height: 36px;
+            padding: 12px!important;
+            border-radius: 8px;
+            border-color: #f0f0f0;
+        }
+        @media (max-width: 991.98px) {
+            .banner-hero.banner-breadcrums {
+                padding: 20px 0px 45px;
+            }
+            .form-square {
+                background: #fff;
+                border-radius: 6px;
+                margin: 15px auto 0;
+                max-width: 100%;
+                padding: 0px 10px;
+                position: relative;
+            }
+            .form-square .block-tags {
+                position: absolute;
+                right: 0;
+                top: 60px;
+            }
+            .form-search {
+                line-height: 35px;
+                padding: 5px!important;
+                border-radius: 4px;
+                border-color: #f0f0f0;
+                font-size: 13px;
+                margin-right: 0.05rem!important;
+                margin-top: 5px;
+            }
+            .btn.btn-square-green {
+                border-radius: 6px;
+                font-size: 15px;
+                letter-spacing: .45px;
+                line-height: 20px;
+                height: 35px;
+                padding: 0px 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header-top p-0 sticky-top bg-danger text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 d-none d-md-block" style="padding-top: 2px">
+                    <a class="text-white text-decoration-none line-right" href="tel:(0541) 2090020" dir="ltr">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="me-1" style="width: 17px">
+                            <path fill="currentColor" d="M16.57 22a2 2 0 0 0 1.43-.59l2.71-2.71a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0l-1.6 1.59a7.55 7.55 0 0 1-3-1.59a7.62 7.62 0 0 1-1.59-3l1.59-1.6a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0L2.59 6A2 2 0 0 0 2 7.43A15.28 15.28 0 0 0 6.3 17.7A15.28 15.28 0 0 0 16.57 22zM6 5.41L8.59 8L7.3 9.29a1 1 0 0 0-.3.91a10.12 10.12 0 0 0 2.3 4.5a10.08 10.08 0 0 0 4.5 2.3a1 1 0 0 0 .91-.27L16 15.41L18.59 18l-2 2a13.28 13.28 0 0 1-8.87-3.71A13.28 13.28 0 0 1 4 7.41zM20 11h2a8.81 8.81 0 0 0-9-9v2a6.77 6.77 0 0 1 7 7z"></path>
+                        </svg>
+                        <span class="text-white">(0541) 2090020</span>
+                    </a>
+                    |
+                    <a class="text-white text-decoration-none" href="mailto:jdihkukar1@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="me-1" style="width: 17px">
+                            <path fill="currentColor" d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"></path>
+                            <path fill="currentColor" d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path>
+                        </svg>
+                        <span class="text-white">jdihkukar1@gmail.com</span>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-6 text-end d-flex justify-content-end align-center-end">
+                    <div class="language-switcher-container">
+                        <div class="language_bar_list ">
+                            
+                                <a href="https://jdih.kukarkab.go.id/" style="text-decoration: none;">
+                                    <img src="../img/indonesia_flag.png" width="16" alt="Bahasa Indonesia">
+                                    <span class="text-white">Bahasa Indonesia</span>
+                                </a>
+                            
+                        </div>
+                    </div>
+                    <div class="user-profile">
+                        <a href="https://jdih.kukarkab.go.id/panel" class="text-white ms-3 d-inline-block text-decoration-none">
+                            <i class="bi bi-box-arrow-in-right"></i>
+                            <span class="text-white">E-Panel</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container">
+                  <a class="navbar-brand" href="https://jdih.kukarkab.go.id/" data-pjax="">
+                    <img src="../img/logo_jdihkukar.png" alt="Logo" class="img-fluid">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html" data-pjax="">Beranda</a>
+                      </li>
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:;" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+                                <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                                    <li><a class="dropdown-item" href="../profil/selayang-pandang.html" data-pjax="">Selayang Pandang</a></li>
+                                    <li><a class="dropdown-item" href="../profil/dasar-hukum.html" data-pjax="">Dasar Hukum</a></li>
+                                    <li><a class="dropdown-item" href="../profil/visi-misi.html" data-pjax="">Visi dan Misi</a></li>
+                                    <li><a class="dropdown-item" href="../profil/program-kegiatan.html" data-pjax="">Program & Kegiatan</a></li>
+                                    <li><a class="dropdown-item" href="../profil/tupoksi-bagian-hukum.html" data-pjax="">Tugas Pokok & Fungsi</a></li>
+                                    <li><a class="dropdown-item" href="../profil/tim-pengelola-jdih.html" data-pjax="">Tim Pengelola JDIH</a></li>
+                                    <li><a class="dropdown-item" href="../profil/struktur-organisasi.html" data-pjax="">Struktur Organisasi</a></li>
+                                </ul>
+                            </li>                        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:;" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Publikasi</a>
+                                <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                                    <li><a class="dropdown-item" href="agenda.html" data-pjax="">Agenda</a></li>
+                                    <li><a class="dropdown-item" href="artikel-hukum.html" data-pjax="">Artikel Hukum</a></li>
+                                    <li><a class="dropdown-item" href="artikel-ilmiah.html" data-pjax="">Artikel Ilmiah</a></li>
+                                    <li><a class="dropdown-item" href="kliping-koran.html" data-pjax="">Kliping Koran</a></li>
+                                    <li><a class="dropdown-item" href="berita-hukum.html" data-pjax="">Berita</a></li>
+                                    <li><a class="dropdown-item" href="galeri-kegiatan.html" data-pjax="">Galeri Kegiatan</a></li>
+                                    <li><a class="dropdown-item" href="video.html" data-pjax="">Video</a></li>
+                                    <li><a class="dropdown-item" href="penghargaan.html" data-pjax="">Penghargaan</a></li>
+                                    <li><a class="dropdown-item" href="pengumuman.html" data-pjax="">Pengumuman</a></li>
+                                    <li><a class="dropdown-item" href="sop.html" data-pjax="">SOP (Prosedur Layanan)</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:;" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Koleksi PUU</a>
+                                <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                                    <li><a class="dropdown-item" href="../koleksi-puu/produk-hukum.html" data-pjax="">Produk Hukum</a></li>
+                                    <li><a class="dropdown-item" href="../koleksi-puu/rancangan-perda.html" data-pjax="">Rancangan Perda</a></li>
+                                    <li><a class="dropdown-item" href="../koleksi-puu/rancangan-perpub.html" data-pjax="">Rancangan Perpub</a></li>
+                                    <li><a class="dropdown-item" href="../koleksi-puu/naskah-akademik.html" data-pjax="">Naskah Akademik</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:;" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Koleksi Non PUU</a>
+                                <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                                    <li><a class="dropdown-item" href="../koleksi-non-puu/koleksi-buku.html" data-pjax="">Koleksi Buku</a></li>
+                                    <li><a class="dropdown-item" href="../koleksi-non-puu/warta.html" data-pjax="">Warta</a></li>
+                                    <li><a class="dropdown-item" href="../koleksi-non-puu/perkara-yang ditangani.html" data-pjax="">Perkara Yang Ditangani</a></li>
+                                    <li><a class="dropdown-item" href="../koleksi-non-puu/putusan-pengadilan.html" data-pjax="">Putusan Pengadilan</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-outline-dark icon-arrow-right text-nowrap d-none d-md-block d-lg-block" href="../hubungi-kami.html" data-pjax="">Konsultasi <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+<main id="content" role="main">
+
+    <div class="banner-breadcrums bg-light" style="height: 45px;">
+        <section class="section-box">
+            <div class="nav-breadcrumbs bg-gray-100">
+                <div class="container">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <i class="bi bi-house-fill"></i>
+                                <a href="../index.html" class="text-danger" style="text-decoration: none;">Beranda</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Publikasi</li>
+                            <li class="breadcrumb-item active" aria-current="page">Artikel Ilmiah</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </div>
+    <br><br><br>
+    <div class="section-box mt-100">
+        <div class="container">
+            <h1 class="text-heading-1 color-gray-900" style="font-family: 'Archivo Black', sans-serif;">
+                Artikel Ilmiah
+            </h1>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        
+    </div>
+
+</main>
+
+    <br><br><br>
+    
+    <style>
+        .footer:after {
+            content: "";
+            display: block;
+            border-top: 1px solid #ccc; /* Ganti warna dan styling garis sesuai kebutuhan */
+            margin-top: 10px; /* Sesuaikan jarak pemisah sesuai kebutuhan */
+        }
+    
+        .footer-top:after {
+            content: "";
+            display: block;
+            border-top: 1px solid #ccc; /* Ganti warna dan styling garis sesuai kebutuhan */
+            margin-top: 10px;
+        }
+    
+        .footer-bottom:before {
+            content: "";
+            display: block;
+            border-top: 1px solid #ccc; /* Ganti warna dan styling garis sesuai kebutuhan */
+            margin-bottom: 10px; /* Sesuaikan jarak pemisah sesuai kebutuhan */
+        }
+    </style>
+
+<div class="container bg-white">
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="section-box overflow-visible mt-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                            <a class="item-logo hover-up" href="http://kukarkab.go.id/">
+                                <img alt="Portal Kutai Kartanegara" src="../img/portal-kutai-kartanegara.png" class="img-fluid" style="max-width: 150px; height: auto;">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                            <a class="item-logo hover-up" href="http://www.kemendagri.go.id/produk-hukum">
+                                <img alt="JDIH Kementerian Dalam Negeri" src="../img/jdih-kementerian-dalam-negeri.png" class="img-fluid" style="max-width: 150px; height: auto;">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                            <a class="item-logo hover-up" href="https://www.kemenkumham.go.id/">
+                                <img alt="JDIH Kementerian Hukum dan Hak Asasi Manusia" src="../img/jdih-kementerian-hukum-dan-hak-asasi-manusia.png" class="img-fluid" style="max-width: 100px; height: auto;">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                            <a class="item-logo hover-up" href="https://jdihn.go.id/">
+                                <img alt="JDIH Nasional" src="../img/jdih-nasional.png" class="img-fluid" style="max-width: 150px; height: auto;">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                            <a class="item-logo hover-up" href="http://jdih.kaltimprov.go.id/">
+                                <img alt="JDIH Provinsi Kalimantan Timur" src="../img/jdih-provinsi-kalimantan-timur.png" class="img-fluid" style="max-width: 150px; height: auto;">
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                            <a class="item-logo hover-up" href="http://jdih.bphn.go.id/">
+                                <img alt="JDIH Badan Pembinaan Hukum Nasional" src="../img/jdih-badan-pembinaan-hukum-nasional.png" class="img-fluid" style="max-width: 150px; height: auto;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="footer-top"></div>
+        <br><br>
+        <div class="row container">
+            <div class="col-lg-7 mb-3">
+                <div class="d-flex">
+                    <img src="../img/favicon.png" alt="" height="135" style="margin-top: -10px">
+                    <div>
+                        <h4 class="text-heading-5" style="font-family: 'Noto Sans', sans-serif; font-weight: bold;font-size: 22px;">Bagian Hukum (Sekretariat Daerah)</h4>
+                        <div class="mt-2 text-body color-gray" style="font-size: 16px; font-family: 'Chivo', sans-serif;">
+                            <i class="bi bi-geo-alt-fill me-1"></i>
+                            Jalan Wolter Monginsidi Kel. Timbau Kec. Tenggarong
+                        </div>
+                        <div class="mt-2 text-body color-gray" style="font-size: 16px; font-family: 'Chivo', sans-serif;">
+                            <i class="bi bi-telephone-fill me-1"></i>
+                            Telp. (0541) 2090020
+                        </div>
+                        <div class="mt-2 text-body color-gray" style="font-size: 16px; font-family: 'Chivo', sans-serif;">
+                            <i class="bi bi-envelope-fill me-1"></i>
+                            Email. <a href="https://jdih.kukarkab.go.id/" style="text-decoration: none;" class="text-danger">jdihkukar1@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <h4 class="text-heading-5" style="font-family: 'Noto Sans', sans-serif; font-weight: bold;font-size: 22px;">Jam Operasional</h4>
+                <div class="open-time mt-2" style="font-size: 16px; font-family: 'Chivo', sans-serif;">
+                    <p>
+                        <strong>Hari Kerja:</strong>
+                        <br>Senin - Kamis: 7.30 s/d 16.00 <br> Jum'at: 7.30 s/d 12.00
+                    </p>
+                    <p>
+                        <strong>Libur:</strong>
+                        <br> Sabtu, Minggu &amp; Libur Nasional
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <h4 class="text-heading-5" style="font-family: 'Noto Sans', sans-serif; font-weight: bold;font-size: 22px;">Stat. Pengunjung</h4>
+                <div class="menu-footer" style="font-size: 16px; font-family: 'Chivo', sans-serif;">
+                    <p>Hari Ini : 7 pengunjung</p>
+                    <p>Minggu Ini : 0 pengunjung</p>
+                    <p>Bulan Ini : 0 pengunjung</p>
+                    <p>Total : 27580 pengunjung</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="footer-bottom mt-2">
+            <br><br>
+            <div class="row">
+                <div class="col-md-7 text-muted" style="font-family: 'Noto Sans', sans-serif;">
+                    <span class="color-gray-500 text-body-lead">2023 © Bagian Hukum Kutai Kartanegara.</span>
+                </div>
+                <div class="col-md-5 text-lg-end text-md-end">
+                    
+                            <a href="https://enterwind.com/" target="_blank">
+                                <img src="../img/logo-footer.png" height="30" alt="">
+                            </a>
+                        
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </footer>
+</div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
